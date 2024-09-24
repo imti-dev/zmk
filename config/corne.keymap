@@ -56,13 +56,6 @@ rgb_encoder: rgb_encoder {
         base_layer {
             display-name = "base";
 
-            // --------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |                ↑    |  Y  |  U   |  I  |  O  |  P  | BKSP |      &kp UP_ARROW
-            // | SHIFT |  A  |  S  |  D  |  F  |  G  |               ↓    |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | CTRL |  Z  |  X  |  C  |  V  |  B  |                ←    |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |                →    | ENT | RSE  | ALT |
-            //                                                      enter
-
             bindings = <
 &kp ESC    &mt N1 Q     &mt N2 W        &mt N3 E  &mt N4 R  &mt N5 T   &kp UP_ARROW     &mt N6 Y     &mt N7 U    &mt N8 I        &mt N9 O      &mt N0 P        &kp BSPC
 &kp TAB    &mt LCTRL A  &mt LALT S      &kp D     &kp F     &kp G      &kp DOWN_ARROW   &mt RCTRL H  &mt RALT J  &kp K           &kp L         &mt MINUS SEMI  &mt EQUAL SQT
@@ -79,12 +72,6 @@ rgb_encoder: rgb_encoder {
         function_layer {
             display-name = "function";
 
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
             bindings = <
 &kp ESC    &kp F1       &kp F2          &kp F3              &kp F4              &kp F5     &kp UP_ARROW     &kp F6       &kp F7      &kp F8          &kp F9        &kp F10         &kp BSPC
 &kp TAB    &kp LCTRL    &kp LALT        &kp UP_ARROW        &kp INS             &kp DEL    &kp DOWN_ARROW   &kp RCTRL    &kp RALT    &trans          &trans        &trans          &trans
@@ -100,12 +87,6 @@ rgb_encoder: rgb_encoder {
 number_layer {
     display-name = "number";
 
-        // -----------------------------------------------------------------------------------------
-        // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-        // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-        // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-        //                    | GUI |     | SPC |   | ENT |     | ALT |
-
         bindings = <
         &kp ESC    &kp N1       &kp N2          &kp N3              &kp N4              &kp N5     &kp UP_ARROW     &kp N6       &kp N7      &kp N8          &kp N9        &kp N0         &kp BSPC
         &kp TAB    &kp LCTRL    &kp LALT        &kp UP_ARROW        &kp INS             &kp DEL    &kp DOWN_ARROW   &kp RCTRL    &kp RALT    &trans          &trans        &trans          &trans
@@ -120,12 +101,6 @@ number_layer {
 
         bluetooth_layer {
             display-name = "bluetooth";
-
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
 &trans    &bt BT_SEL 0 &bt BT_SEL 1     &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4    &kp UP_ARROW     &trans       &trans      &trans   &trans  &trans  &bt BT_CLR
