@@ -53,7 +53,7 @@ rgb_encoder: rgb_encoder {
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        base_layer {
             display-name = "base";
 
             // --------------------------------------------------------------------------------
@@ -75,7 +75,8 @@ rgb_encoder: rgb_encoder {
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
-        lower_layer {
+
+        function_layer {
             display-name = "function";
 
             // -----------------------------------------------------------------------------------------
@@ -96,7 +97,28 @@ rgb_encoder: rgb_encoder {
             sensor-bindings = <&scroll_encoder>;
         };
 
-        raise_layer {
+number_layer {
+    display-name = "number";
+
+        // -----------------------------------------------------------------------------------------
+        // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+        // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+        // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+        //                    | GUI |     | SPC |   | ENT |     | ALT |
+
+        bindings = <
+        &kp ESC    &kp N1       &kp N2          &kp N3              &kp N4              &kp N5     &kp UP_ARROW     &kp N6       &kp N7      &kp N8          &kp N9        &kp N0         &kp BSPC
+        &kp TAB    &kp LCTRL    &kp LALT        &kp UP_ARROW        &kp INS             &kp DEL    &kp DOWN_ARROW   &kp RCTRL    &kp RALT    &trans          &trans        &trans          &trans
+        &kp LSHFT  &kp HOME     &kp LEFT_ARROW  &kp DOWN_ARROW      &kp RIGHT_ARROW     &kp END    &kp LEFT_ARROW   &trans       &trans       &trans          &trans       &trans          &trans
+                                &kp SPACE       &kp LGUI            &to 3               &kp SPACE  &kp RIGHT_ARROW  &kp ENTER    &to 1       &trans
+                                                                                                   &kp C_PP
+                            >;
+
+        label = "number";
+        sensor-bindings = <&scroll_encoder>;
+                        };
+
+        bluetooth_layer {
             display-name = "bluetooth";
 
             // -----------------------------------------------------------------------------------------
@@ -109,7 +131,7 @@ rgb_encoder: rgb_encoder {
 &trans    &bt BT_SEL 0 &bt BT_SEL 1     &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4    &kp UP_ARROW     &trans       &trans      &trans   &trans  &trans  &bt BT_CLR
 &trans    &trans       &trans           &trans          &trans        &trans          &kp DOWN_ARROW   &trans       &trans      &trans   &trans  &trans  &trans
 &trans    &trans       &trans           &trans          &trans        &trans          &kp LEFT_ARROW   &trans       &trans      &trans   &trans  &trans  &trans
-                  &kp SPACE             &trans          &trans        &trans          &kp RIGHT_ARROW  &trans       &to 1       &trans
+                  &kp SPACE             &trans          &trans        &trans          &kp RIGHT_ARROW  &trans       &to 2       &trans
                                                                                       &kp C_PP
             >;
 
