@@ -51,7 +51,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "QWEjkhRTY";
+            display-name = "layer 1";
 
             // --------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |                ↑    |  Y  |  U   |  I  |  O  |  P  | BKSP |      &kp UP_ARROW 
@@ -68,12 +68,12 @@
                                                                                                &kp K_PLAY_PAUSE
             >;
 
-            label = "QWERTY";
+            label = "layer 1";
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         layer_1 {
-            label = "QWERTY";
+            label = "layer 2";
             display-name = "layer 2";
             bindings = <
 &kp ESCAPE      &kp F1    &kp F2          &kp F3     &kp F4          &kp F5         &kp UP_ARROW     &kp F6       &kp F7          &kp F8    &kp F9   &kp F10  &kp BSPC
