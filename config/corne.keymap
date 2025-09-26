@@ -56,11 +56,11 @@
         base_layer {
             display-name = "base";
             bindings = <
-&kp ESC    &mt N1 Q     &mt N2 W    &mt N3 E  &mt N4 R  &mt N5 T     &kp UP_ARROW     &mt N6 Y     &mt N7 U    &mt N8 I        &mt N9 O      &mt N0 P        &kp BSPC
-&kp TAB    &mt LCTRL A  &mt LALT S  &kp D     &kp F     &kp G        &kp DOWN_ARROW   &mt RCTRL H  &mt RALT J  &kp K           &kp L         &mt MINUS SEMI  &mt EQUAL SQT
-&kp LSHFT  &mt GRAVE Z  &kp X       &kp C     &kp V     &kp B        &kp LEFT_ARROW   &kp N        &kp M       &mt LBKT COMMA  &mt RBKT DOT  &mt BSLH FSLH   &kp RSHFT
-                        &kp SPACE   &kp LGUI  &to 1     &kp SPACE    &kp RIGHT_ARROW  &kp ENTER    &trans      &kp RGUI
-                                                                     &kp C_PP
+&kp ESC         &mt N1 Q     &mt N2 W    &mt N3 E  &mt N4 R  &mt N5 T     &kp UP_ARROW     &mt N6 Y     &mt N7 U    &mt N8 I        &mt N9 O      &mt N0 P        &kp BSPC
+&kp TAB         &mt LCTRL A  &mt LALT S  &kp D     &kp F     &kp G        &kp DOWN_ARROW   &mt RCTRL H  &mt RALT J  &kp K           &kp L         &mt MINUS SEMI  &mt EQUAL SQT
+&mt LSHFT CAPS  &mt GRAVE Z  &kp X       &kp C     &kp V     &kp B        &kp LEFT_ARROW   &kp N        &kp M       &mt LBKT COMMA  &mt RBKT DOT  &mt BSLH FSLH   &mt RSHFT CAPS
+                             &kp SPACE   &kp LGUI  &to 1     &kp SPACE    &kp RIGHT_ARROW  &kp ENTER    &trans      &kp RGUI
+                                                                          &kp C_PP
             >;
 
             label = "base";
